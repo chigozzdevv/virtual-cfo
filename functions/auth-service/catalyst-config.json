@@ -1,0 +1,15 @@
+{
+  "deployment": {
+    "name": "auth-service",
+    "stack": "node16",
+    "type": "advancedio",
+    "env_variables": {
+      "ZOHO_CLIENT_ID": "1000.W2XH5UW93WEASZQK7332KIHZIL3WAH",
+      "ZOHO_CLIENT_SECRET": "f903da2fc39af75d59c61d41deb81fe97787e025e5",
+      "ZOHO_REDIRECT_URI": "https://voice-cfo-zoho-books-698185418.development.catalystserverless.com/auth/callback"
+    }
+  },
+  "execution": {
+    "main": "index.js"
+  }
+}

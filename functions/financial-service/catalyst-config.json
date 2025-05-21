@@ -1,0 +1,13 @@
+{
+  "deployment": {
+    "name": "financial-service",
+    "stack": "node16",
+    "type": "advancedio",
+    "env_variables": {
+      "AUTH_SERVICE_URL": ""
+    }
+  },
+  "execution": {
+    "main": "index.js"
+  }
+}

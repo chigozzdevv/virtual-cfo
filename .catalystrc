@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "333000002154001",
+      "name": "voice-cfo-zoho-books",
+      "domain": {
+        "id": "10099271875",
+        "name": "voice-cfo-zoho-books-698185418.development"
+      },
+      "timezone": "America/New_York",
+      "env": [
+        {
+          "idx": 1,
+          "id": "698185418",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

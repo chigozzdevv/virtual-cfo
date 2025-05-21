@@ -1,0 +1,14 @@
+{
+  "deployment": {
+    "name": "voice-webhook",
+    "stack": "node16",
+    "type": "advancedio",
+    "env_variables": {
+      "OPENAI_API_KEY": "",
+      "FINANCIAL_SERVICE_URL": ""
+    }
+  },
+  "execution": {
+    "main": "index.js"
+  }
+}

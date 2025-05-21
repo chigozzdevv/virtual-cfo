@@ -1,0 +1,18 @@
+{
+  "functions": {
+    "targets": [
+      
+      "auth-service",
+      "financial-service",
+      "memory-service",
+      "voice-webhook"
+   
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "virtual-client",
+    "plugin": "zcatalyst-cli-plugin-react"
+  }
+}

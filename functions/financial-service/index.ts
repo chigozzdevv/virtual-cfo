@@ -6,19 +6,6 @@ import { getDateRangeForPeriod } from './utils';
 
 const app = express();
 
-app.use((req, res, next) => {
-  // Allow requests from any origin
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-  
-  if (req.method === 'OPTIONS') {
-    return res.status(200).end();
-  }
-  
-  next();
-});
-
 app.use(express.json());
 
 // Initialize Zoho Books service for a request

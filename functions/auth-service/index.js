@@ -17,16 +17,6 @@ const catalyst = require('zcatalyst-sdk-node');
 const zohoAuth_1 = require("./services/zohoAuth");
 const utils_1 = require("./utils");
 const app = (0, express_1.default)();
-app.use((req, res, next) => {
-    // Allow requests from any origin
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-    if (req.method === 'OPTIONS') {
-        return res.status(200).end();
-    }
-    next();
-});
 app.use(express_1.default.json());
 // Handle OAuth callback
 app.get('/callback', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
